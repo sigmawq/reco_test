@@ -7,6 +7,7 @@ Basically a program to periodically query things from Asana and store it locally
 1. Have go compiler installed on the target system
 2. cd to source directory
 3. ```go build .```
+4. Make sure you have prepared a correct **config.txt** before running the target executable
 4. Run the target executable
 
 ## Config docs
