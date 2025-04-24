@@ -1,0 +1,5 @@
+asana_secret=2/1210066390938105/1210066546338976:2e438cb7d79f55fa69488e14d35ff439
+extraction_period_seconds=5
+retry_count=5
+retry_period_milliseconds=3000
+asana_max_rpm=10

@@ -1,11 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"github.com/microcodebase/microconfig"
+	"log"
+)
 
-func Foo() int {
-	return 5
-}
+var config map[string]string
 
 func main() {
-	fmt.Println("test")
+	var err error
+	config, err = microconfig.ParseFile("config.txt")
+	if err != nil {
+		log.Println("Failed to parse config", err)
+		return
+	}
+
+	Extractor()
 }
